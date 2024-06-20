@@ -1,10 +1,19 @@
   body {
-    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-family: Helvetica;
+    font-size: 15px;
   }
+
+  .top {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    margin: 25px; /* Center container horizontally */
+}
   
   /* Container for the search bar */
     .search-container {
         display: flex;
+        flex: 1;
+        flex-direction: row;
         align-items: center;
         max-width: 100%;
         margin: auto;
@@ -25,14 +34,13 @@
 
     /* SVG icon styling */
     .search-icon svg {
-        width: 30px;
+        width: 24px;
         height: 30px;
         fill: #000000;
     }
 
     /* Text container styling */
     .text-container {
-        flex: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -51,6 +59,19 @@
     }
 
     .firstline {
-        font-size: 20px;
-        font-weight: 600;
+        font-size: 18px;
+        font-weight: bolder;
     }
+
+    /* Settings box */
+    .settings-container {
+        display: inline-flex;
+        flex: 2;
+        max-height: 20px;
+        max-width: 20px;
+        margin-left: 20px; /* Adjust margin for spacing */
+        padding: 20px; /* Adjust padding as needed */
+        background-color: #ffffff; /* Background color */
+        border: 1px solid #B0B0B0; /* Border */
+        border-radius: 50%; /* Border radius */
+}
