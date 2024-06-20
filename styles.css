@@ -1,77 +1,135 @@
-  body {
+body {
     font-family: Helvetica;
     font-size: 15px;
-  }
-
-  .top {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center items vertically */
-    margin: 25px; /* Center container horizontally */
 }
-  
-  /* Container for the search bar */
-    .search-container {
-        display: flex;
-        flex: 1;
-        flex-direction: row;
-        align-items: center;
-        max-width: 100%;
-        margin: auto;
-        padding: 5px;
-        border-radius: 50px;
-        background-color: #ffffff;
-        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    }
 
-    /* Button styling */
-    .search-icon {
-        padding: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: left;
-        cursor: pointer;
-    }
+.top {
+    display: flex;
+    /* Use flexbox for layout */
+    align-items: center;
+    /* Center items vertically */
+    margin: 25px;
+    /* Center container horizontally */
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line */
+    gap: 20px;
+    /* Space between items */
+}
 
-    /* SVG icon styling */
-    .search-icon svg {
-        width: 24px;
-        height: 30px;
-        fill: #000000;
-    }
+/* Container for the search bar */
+.search-container {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+    margin: auto;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
 
-    /* Text container styling */
-    .text-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        border: none;
-        background: none;
-    }
+/* Button styling */
+.search-icon {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    cursor: pointer;
+}
 
-    /* Styling for each line */
-    .line {
-        display: flex;
-        align-items: center;
-    }
+/* SVG icon styling */
+.search-icon svg {
+    width: 24px;
+    height: 30px;
+    fill: #000000;
+}
 
-    .item {
-        padding-right: 5px;
-    }
+/* Text container styling */
+.text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    background: none;
+}
 
-    .firstline {
-        font-size: 18px;
-        font-weight: bolder;
-    }
+/* Styling for each line */
+.line {
+    display: flex;
+    align-items: center;
+}
 
-    /* Settings box */
-    .settings-container {
-        display: inline-flex;
-        flex: 2;
-        max-height: 20px;
-        max-width: 20px;
-        margin-left: 20px; /* Adjust margin for spacing */
-        padding: 20px; /* Adjust padding as needed */
-        background-color: #ffffff; /* Background color */
-        border: 1px solid #B0B0B0; /* Border */
-        border-radius: 50%; /* Border radius */
+.item {
+    padding-right: 5px;
+}
+
+.firstline {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+/* Settings box */
+.settings-container {
+    display: inline-flex;
+    flex: 2;
+    max-height: 20px;
+    max-width: 20px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #B0B0B0;
+    border-radius: 50%;
+}
+
+/*  Styles for the navigation menu */
+.nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 0px 0px 20px 0px;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+    box-shadow: 0px 5px 5px -1px rgba(129, 129, 129, 0.1);
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    flex: 1;
+}
+
+.nav-item img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.nav-item span {
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    position: relative;
+}
+
+a:after {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+a:hover:after {
+    width: 100%;
 }
