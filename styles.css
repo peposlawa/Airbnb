@@ -1,19 +1,12 @@
 body {
     font-family: Helvetica;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .top {
     display: flex;
-    /* Use flexbox for layout */
     align-items: center;
-    /* Center items vertically */
-    margin: 25px;
-    /* Center container horizontally */
-    flex-wrap: wrap;
-    /* Allow items to wrap to the next line */
-    gap: 20px;
-    /* Space between items */
+    margin: 15px;
 }
 
 /* Container for the search bar */
@@ -25,9 +18,10 @@ body {
     max-width: 100%;
     margin: auto;
     padding: 5px;
+    height: 50px;
     border-radius: 50px;
     background-color: #ffffff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Button styling */
@@ -41,8 +35,8 @@ body {
 
 /* SVG icon styling */
 .search-icon svg {
-    width: 24px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     fill: #000000;
 }
 
@@ -66,7 +60,7 @@ body {
 }
 
 .firstline {
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bolder;
 }
 
@@ -74,62 +68,72 @@ body {
 .settings-container {
     display: inline-flex;
     flex: 2;
-    max-height: 20px;
-    max-width: 20px;
-    margin-left: 20px;
-    padding: 20px;
+    max-height: 13px;
+    max-width: 13px;
+    margin-left: 15px;
+    padding: 15px;
     background-color: #ffffff;
     border: 1px solid #B0B0B0;
     border-radius: 50%;
 }
 
 /*  Styles for the navigation menu */
+
 .nav {
     display: flex;
-    justify-content: space-around;
     background-color: #ffffff;
-    padding: 0px 0px 20px 0px;
-    color: rgb(0, 0, 0);
-    margin-top: 20px;
-    width: 100%;
-    flex-wrap: wrap;
     box-shadow: 0px 5px 5px -1px rgba(129, 129, 129, 0.1);
+    overflow-x: scroll;
+    position: relative;
+    align-items: center;
+    padding: 0px;
+}
+
+.nav::-webkit-scrollbar {
+    width: 0;
+    display: none;
 }
 
 .nav-item {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    flex: 1;
+    justify-content: center;
+    padding: 0px 18px;
+    position: relative;
+    height: 80px;
 }
 
 .nav-item img {
-    width: 30px;
-    height: 30px;
+    height: 25px;
     margin-bottom: 5px;
 }
 
 .nav-item span {
-    font-size: 14px;
+    font-size: 12px;
 }
 
-a {
+.nav-item a {
     text-decoration: none;
     color: #000000;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-a:after {
+.nav-item:after{
     content: "";
-    height: 3px;
-    width: 0%;
-    background-color: rgb(0, 0, 0);
     position: absolute;
-    bottom: -10px;
+    background-color: #0e0e0e;
+    height: 2px;
+    width: 0;
     left: 0;
+    bottom: 0px;
 }
-
-a:hover:after {
+.nav-item:hover{
+    color: #000000;
+}
+.nav-item:hover:after{
     width: 100%;
 }
+
