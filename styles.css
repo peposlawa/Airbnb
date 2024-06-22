@@ -172,6 +172,15 @@ body {
     z-index: 1; 
 }
 
+.heart {
+    position: absolute;
+    top: 15px;
+    right: 5%;
+    padding: 0px 0px;
+    stroke: #e1e1e1;
+    stroke-width: 2px;
+}
+
 /* Card */
 
 .photo-item {
