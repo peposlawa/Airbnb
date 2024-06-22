@@ -146,7 +146,7 @@ body {
     width: 100%;
 }
 
-/*  Main photo content */
+/* Main photo content */
 
 .container {
     display: flex;
@@ -156,6 +156,8 @@ body {
     font-size: 14px;
     line-height: 1.5em;
 }
+
+/* Guest favourite badge */
 
 .badge {
     position: absolute;
@@ -170,6 +172,8 @@ body {
     z-index: 1; 
 }
 
+/* Card */
+
 .photo-item {
     position: relative;
     width: 100%;
@@ -181,6 +185,8 @@ body {
     border-radius: 15px;
     aspect-ratio: 1;
 }
+
+/* Description */
 
 .rating {
     display: flex;
@@ -202,4 +208,4 @@ body {
 .price {
     font-weight: 600;
     text-decoration: underline;
-} 
+}
