@@ -159,15 +159,15 @@ body {
 
 .badge {
     position: absolute;
-    top: 15px; /* Adjust top position as needed */
-    left: 16px; /* Adjust left position as needed */
-    background-color: #ffffff; /* Choose your badge background color */
-    color: #000000; /* Choose your badge text color */
+    top: 15px; 
+    left: 16px; 
+    background-color: #ffffff; 
+    color: #000000; 
     padding: 5px 10px;
     font-size: 13px;
     font-weight: 600;
     border-radius: 50px;
-    z-index: 1; /* Ensure the badge appears above the image */
+    z-index: 1; 
 }
 
 .photo-item {
@@ -186,7 +186,7 @@ body {
     display: flex;
     justify-content: flex-end;
     margin-top: -86px;
-    align-items: center;
+    align-items: center; 
 }
 
 .number {
