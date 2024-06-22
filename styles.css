@@ -1,6 +1,12 @@
 body {
-    font-family: Helvetica;
-    font-size: 12px;
+    font-family: Montserrat;
+    font-size: 11px;
+}
+
+.montserrat {
+    font-family: "Montserrat";
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 
 .top {
@@ -60,8 +66,8 @@ body {
 }
 
 .firstline {
-    font-size: 15px;
-    font-weight: bolder;
+    font-size: 13px;
+    font-weight: 600;
 }
 
 /* Settings box */
@@ -99,7 +105,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0px 18px;
+    padding: 0px 17px;
     position: relative;
     height: 80px;
 }
@@ -110,7 +116,8 @@ body {
 }
 
 .nav-item span {
-    font-size: 12px;
+    font-size: 11px;
+    font-weight: 600;
 }
 
 .nav-item a {
@@ -121,7 +128,7 @@ body {
     align-items: center;
 }
 
-.nav-item:after{
+.nav-item:after {
     content: "";
     position: absolute;
     background-color: #0e0e0e;
@@ -130,10 +137,69 @@ body {
     left: 0;
     bottom: 0px;
 }
-.nav-item:hover{
+
+.nav-item:hover {
     color: #000000;
 }
-.nav-item:hover:after{
+
+.nav-item:hover:after {
     width: 100%;
 }
 
+/*  Main photo content */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 25px auto;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.badge {
+    position: absolute;
+    top: 15px; /* Adjust top position as needed */
+    left: 16px; /* Adjust left position as needed */
+    background-color: #ffffff; /* Choose your badge background color */
+    color: #000000; /* Choose your badge text color */
+    padding: 5px 10px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 50px;
+    z-index: 1; /* Ensure the badge appears above the image */
+}
+
+.photo-item {
+    position: relative;
+    width: 100%;
+    margin-bottom: 90px;
+}
+
+.photo-item img {
+    width: 100%;
+    border-radius: 15px;
+    aspect-ratio: 1;
+}
+
+.rating {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -86px;
+    align-items: center;
+}
+
+.number {
+    margin-left: 4px;
+}
+
+.title {
+    font-weight: 600;
+    padding-top: 5px;
+
+}
+
+.price {
+    font-weight: 600;
+    text-decoration: underline;
+}
