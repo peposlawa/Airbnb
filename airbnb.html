@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox Navigation Menu</title>
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+
 </head>
 
 <body>
@@ -50,30 +55,135 @@
     <!-- Navigation menu -->
     <nav class="nav">
         <div class="nav-item">
-            <img src="https://a0.muscache.com/im/pictures/mediaverse/category_icon/original/3e5243c8-4d15-4c6b-97e3-7ba2bb7bb880.png" alt="Icon 1"></a>
-            <span><a href="http://google.com">Icons</a></span>
+            <a href="#"><img
+                    src="https://a0.muscache.com/im/pictures/mediaverse/category_icon/original/3e5243c8-4d15-4c6b-97e3-7ba2bb7bb880.png"
+                    alt="Icon 1"><span>Icons</span></a>
         </div>
         <div class="nav-item">
-            <img src="https://a0.muscache.com/pictures/732edad8-3ae0-49a8-a451-29a8010dcc0c.jpg" alt="Icon 2">
-            <span><a href="http://google.com">Cabins</a></span>
+            <a href="#"><img src="https://a0.muscache.com/pictures/732edad8-3ae0-49a8-a451-29a8010dcc0c.jpg"
+                    alt="Icon 2">
+                <span>Cabins</span></a>
         </div>
         <div class="nav-item">
-            <img src="https://a0.muscache.com/pictures/bcd1adc0-5cee-4d7a-85ec-f6730b0f8d0c.jpg" alt="Icon 3">
-            <span><a href="http://google.com">Beachfront</a></span>
+            <a href="#"><img src="https://a0.muscache.com/pictures/bcd1adc0-5cee-4d7a-85ec-f6730b0f8d0c.jpg"
+                    alt="Icon 3">
+                <span>Beachfront</span></a>
         </div>
         <div class="nav-item">
-            <img src="https://a0.muscache.com/pictures/c5a4f6fc-c92c-4ae8-87dd-57f1ff1b89a6.jpg" alt="Icon 4">
-            <span><a href="http://google.com">OMG!</a></span>
+            <a href="#"><img src="https://a0.muscache.com/pictures/c5a4f6fc-c92c-4ae8-87dd-57f1ff1b89a6.jpg"
+                    alt="Icon 4">
+                <span>OMG!</span></a>
         </div>
         <div class="nav-item">
-            <img src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARBSURBVHgB7ZyLkds2EIa/ZFKAS0AHcQnoIOlA7CDXwTEV3LkCMxUkqYDpwEkFmlRw6UARhkebprl84EXY2G9mZyyOREL4/8WK4PpAURRFURRFURRFUXbyeI+X13h/D4OSjad73Baiv8cFJSmG5cmfxpVBiDco0enYFmAqhC5PETHsn/x5OCEsShAd/gLMlyflIIbwyZ8L8Qu6PO2mQ55Mc4+GYVJ9lyeDImJYn7wpFv+lqkeXp0U61t2/hHn9nE9WjHVCf8ZyzP1LuEls8Bei+uWp47j7JRqGZeaoEG674y0VYghz/9p5O45nQ3V0xHP/EuYeD+xfniwVYUjjfomGbSF6KqIjrfsl7Ma1LRVgyOv+JaRsqCILOs5x/5QHKs0Cw/nud7j7hxcqzIKO890/0lJZFhjKcP9IdVnQUY77R1oqyQJDWe4fWcuCM8cVnY7y3D/SUu7YgjEMT6ZKdP/IN5UF7svYezyzbw/GUAYt8hiLf25gGFzeIzupdHe5SZbG2VIYR12e2v23xPFCAVlg8HO5FM/E45YhWjITy+VLbmqJSw4BsmbBI3FcPsaVQUhLmi9xyxQtGXgifKBOvJ58jVG5BMiSBb7Ov5LW5WvcMkZLQt4eGEhul+fGfbfsWfAz5bo8NxZ5Hh5IxLNwwd+ps3lJyoIriZAu+BN1YpGz4EICpAJcZdfYK9myQCrAL9SNRc4CS0SkAtyjOLd7zc337McKx/9B+VU4bomYBVqA1/HOgr3UWoBvEcISSM0FOIYAvXTyvTXACMf/RtmDRciCvQJY4bgW4P08EoBLoVoL8C1i2PnJ92aAVGj/RTnCBQ+ObEEvRY20yPNhOMjWFrQK8CVrjVyHmw2kLWgVYJ2WSD/de8oQwDA8XXvPcNc5dZj79weG5xIXyng2sdbIdYjQ7odQGvxM4D5z4VyC5yS0AIcIYInTb+TOcZYQwXNyxha0S90YrS/zeKKcbozdSAU4ZtvgFMOwlt8SxZW89SFYgF44QYo7YEPcFscSRAgWINcWtFsa9kz+2Ddq+XwSj/apfiDPchQkQM4t6K01302qZT8N20I8kZ4gAXIV4Ib1iXKu9nHrG7ZvIi1pCRIgVwG+Ig+0JZyW9cxKSZAAvfDhmAW4Yd35sVjLhAvpCBIgRwGWRHbOjFkk14p87CV1ircAOQqwIa8r7cr1DGnwFiBHAW6Q3Z8KKatTdTNvCiA9EbPC8ZjPgKVa8ifpeCcc/5GTkASQBhQzA4xw/A/S8Zdw3FIYOQqwdI2Ud6iG9LVtilcNyHUH7DW4r+y6XjXALJ9Lm7BSsCSAFd6rTVgJWBIgRwFWXlkSQJuwTiTnFrQWYb7MACOcSAtwIn6YvbbC+9zxHO4k43WKuO48A067Ja+V72avi/jLTxXwcd6P/C9JJQ7/TV/MBXiHkprftt7gHt/F/GtYGp9+yrcoiqIoiqIod/4HJmYJ75nbjt4AAAAASUVORK5CYII=" alt="Icon 5">
-            <span><a href="http://google.com">Caves</a></span>
+            <a href="#"><img
+                    src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARBSURBVHgB7ZyLkds2EIa/ZFKAS0AHcQnoIOlA7CDXwTEV3LkCMxUkqYDpwEkFmlRw6UARhkebprl84EXY2G9mZyyOREL4/8WK4PpAURRFURRFURRFUXbyeI+X13h/D4OSjad73Baiv8cFJSmG5cmfxpVBiDco0enYFmAqhC5PETHsn/x5OCEsShAd/gLMlyflIIbwyZ8L8Qu6PO2mQ55Mc4+GYVJ9lyeDImJYn7wpFv+lqkeXp0U61t2/hHn9nE9WjHVCf8ZyzP1LuEls8Bei+uWp47j7JRqGZeaoEG674y0VYghz/9p5O45nQ3V0xHP/EuYeD+xfniwVYUjjfomGbSF6KqIjrfsl7Ma1LRVgyOv+JaRsqCILOs5x/5QHKs0Cw/nud7j7hxcqzIKO890/0lJZFhjKcP9IdVnQUY77R1oqyQJDWe4fWcuCM8cVnY7y3D/SUu7YgjEMT6ZKdP/IN5UF7svYezyzbw/GUAYt8hiLf25gGFzeIzupdHe5SZbG2VIYR12e2v23xPFCAVlg8HO5FM/E45YhWjITy+VLbmqJSw4BsmbBI3FcPsaVQUhLmi9xyxQtGXgifKBOvJ58jVG5BMiSBb7Ov5LW5WvcMkZLQt4eGEhul+fGfbfsWfAz5bo8NxZ5Hh5IxLNwwd+ps3lJyoIriZAu+BN1YpGz4EICpAJcZdfYK9myQCrAL9SNRc4CS0SkAtyjOLd7zc337McKx/9B+VU4bomYBVqA1/HOgr3UWoBvEcISSM0FOIYAvXTyvTXACMf/RtmDRciCvQJY4bgW4P08EoBLoVoL8C1i2PnJ92aAVGj/RTnCBQ+ObEEvRY20yPNhOMjWFrQK8CVrjVyHmw2kLWgVYJ2WSD/de8oQwDA8XXvPcNc5dZj79weG5xIXyng2sdbIdYjQ7odQGvxM4D5z4VyC5yS0AIcIYInTb+TOcZYQwXNyxha0S90YrS/zeKKcbozdSAU4ZtvgFMOwlt8SxZW89SFYgF44QYo7YEPcFscSRAgWINcWtFsa9kz+2Ddq+XwSj/apfiDPchQkQM4t6K01302qZT8N20I8kZ4gAXIV4Ib1iXKu9nHrG7ZvIi1pCRIgVwG+Ig+0JZyW9cxKSZAAvfDhmAW4Yd35sVjLhAvpCBIgRwGWRHbOjFkk14p87CV1ircAOQqwIa8r7cr1DGnwFiBHAW6Q3Z8KKatTdTNvCiA9EbPC8ZjPgKVa8ifpeCcc/5GTkASQBhQzA4xw/A/S8Zdw3FIYOQqwdI2Ud6iG9LVtilcNyHUH7DW4r+y6XjXALJ9Lm7BSsCSAFd6rTVgJWBIgRwFWXlkSQJuwTiTnFrQWYb7MACOcSAtwIn6YvbbC+9zxHO4k43WKuO48A067Ja+V72avi/jLTxXwcd6P/C9JJQ7/TV/MBXiHkprftt7gHt/F/GtYGp9+yrcoiqIoiqIod/4HJmYJ75nbjt4AAAAASUVORK5CYII="
+                    alt="Icon 5">
+                <span>Caves</span></a>
         </div>
         <div class="nav-item">
-            <img src="https://a0.muscache.com/pictures/6b639c8d-cf9b-41fb-91a0-91af9d7677cc.jpg" alt="Icon 6">
-            <span><a href="http://google.com">Golfing</a></span>
+            <a href="#"><img src="https://a0.muscache.com/pictures/6b639c8d-cf9b-41fb-91a0-91af9d7677cc.jpg"
+                    alt="Icon 6">
+                <span>Golfing</span></a>
+        </div>
+        <div class="nav-item">
+            <a href="#"><img
+                    src="https://a0.muscache.com/im/pictures/mediaverse/category_icon/original/3e5243c8-4d15-4c6b-97e3-7ba2bb7bb880.png"
+                    alt="Icon 1">
+                <span>Icons</span></a>
+        </div>
+        <div class="nav-item">
+            <a href="#"><img src="https://a0.muscache.com/pictures/732edad8-3ae0-49a8-a451-29a8010dcc0c.jpg"
+                    alt="Icon 2">
+                <span>Cabins</span></a>
+        </div>
+        <div class="nav-item">
+            <a href="#"><img src="https://a0.muscache.com/pictures/bcd1adc0-5cee-4d7a-85ec-f6730b0f8d0c.jpg"
+                    alt="Icon 3">
+                <span>Beachfront</span></a>
+        </div>
+        <div class="nav-item">
+            <a href="#"><img src="https://a0.muscache.com/pictures/c5a4f6fc-c92c-4ae8-87dd-57f1ff1b89a6.jpg"
+                    alt="Icon 4">
+                <span>OMG!</span></a>
+        </div>
+        <div class="nav-item">
+            <a href="#"><img
+                    src="data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARBSURBVHgB7ZyLkds2EIa/ZFKAS0AHcQnoIOlA7CDXwTEV3LkCMxUkqYDpwEkFmlRw6UARhkebprl84EXY2G9mZyyOREL4/8WK4PpAURRFURRFURRFUXbyeI+X13h/D4OSjad73Baiv8cFJSmG5cmfxpVBiDco0enYFmAqhC5PETHsn/x5OCEsShAd/gLMlyflIIbwyZ8L8Qu6PO2mQ55Mc4+GYVJ9lyeDImJYn7wpFv+lqkeXp0U61t2/hHn9nE9WjHVCf8ZyzP1LuEls8Bei+uWp47j7JRqGZeaoEG674y0VYghz/9p5O45nQ3V0xHP/EuYeD+xfniwVYUjjfomGbSF6KqIjrfsl7Ma1LRVgyOv+JaRsqCILOs5x/5QHKs0Cw/nud7j7hxcqzIKO890/0lJZFhjKcP9IdVnQUY77R1oqyQJDWe4fWcuCM8cVnY7y3D/SUu7YgjEMT6ZKdP/IN5UF7svYezyzbw/GUAYt8hiLf25gGFzeIzupdHe5SZbG2VIYR12e2v23xPFCAVlg8HO5FM/E45YhWjITy+VLbmqJSw4BsmbBI3FcPsaVQUhLmi9xyxQtGXgifKBOvJ58jVG5BMiSBb7Ov5LW5WvcMkZLQt4eGEhul+fGfbfsWfAz5bo8NxZ5Hh5IxLNwwd+ps3lJyoIriZAu+BN1YpGz4EICpAJcZdfYK9myQCrAL9SNRc4CS0SkAtyjOLd7zc337McKx/9B+VU4bomYBVqA1/HOgr3UWoBvEcISSM0FOIYAvXTyvTXACMf/RtmDRciCvQJY4bgW4P08EoBLoVoL8C1i2PnJ92aAVGj/RTnCBQ+ObEEvRY20yPNhOMjWFrQK8CVrjVyHmw2kLWgVYJ2WSD/de8oQwDA8XXvPcNc5dZj79weG5xIXyng2sdbIdYjQ7odQGvxM4D5z4VyC5yS0AIcIYInTb+TOcZYQwXNyxha0S90YrS/zeKKcbozdSAU4ZtvgFMOwlt8SxZW89SFYgF44QYo7YEPcFscSRAgWINcWtFsa9kz+2Ddq+XwSj/apfiDPchQkQM4t6K01302qZT8N20I8kZ4gAXIV4Ib1iXKu9nHrG7ZvIi1pCRIgVwG+Ig+0JZyW9cxKSZAAvfDhmAW4Yd35sVjLhAvpCBIgRwGWRHbOjFkk14p87CV1ircAOQqwIa8r7cr1DGnwFiBHAW6Q3Z8KKatTdTNvCiA9EbPC8ZjPgKVa8ifpeCcc/5GTkASQBhQzA4xw/A/S8Zdw3FIYOQqwdI2Ud6iG9LVtilcNyHUH7DW4r+y6XjXALJ9Lm7BSsCSAFd6rTVgJWBIgRwFWXlkSQJuwTiTnFrQWYb7MACOcSAtwIn6YvbbC+9zxHO4k43WKuO48A067Ja+V72avi/jLTxXwcd6P/C9JJQ7/TV/MBXiHkprftt7gHt/F/GtYGp9+yrcoiqIoiqIod/4HJmYJ75nbjt4AAAAASUVORK5CYII="
+                    alt="Icon 5">
+                <span>Caves</span></a>
+        </div>
+        <div class="nav-item">
+            <a href="#"><img src="https://a0.muscache.com/pictures/6b639c8d-cf9b-41fb-91a0-91af9d7677cc.jpg"
+                    alt="Icon 6">
+                <span>Golfing</span></a>
         </div>
     </nav>
+
+    <!-- Main photo content -->
+
+    <div class="container">
+
+        <div class="photo-item">
+            <span class="badge">Guest favourite</span>
+            <img src="https://a0.muscache.com/im/pictures/8a325d77-9297-4b56-a8d5-d7c1dcd81304.jpg?im_w=320">
+            <div class="description">
+                <div class="title">Northamptonshire, UK</div>
+                <div class="subtitle">Hosted by a business</div>
+                <div class="date">21-26 Jul</div>
+                <div class="price">£598 total</div>
+            </div>
+            <div class="rating">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                    focusable="false" style="display: block; height: 12px; width: 12px; fill: currentcolor;">
+                    <path fill-rule="evenodd"
+                        d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                    </path>
+                </svg>
+                <span class="number">4.98</span>
+            </div>
+        </div>
+
+        <div class="photo-item">
+            <span class="badge">Guest favourite</span>
+            <img src="https://a0.muscache.com/im/pictures/miso/Hosting-48671576/original/e24e5d5f-a88a-4e3d-9e89-bf1a0c5afef2.jpeg?im_w=720">
+            <div class="description">
+                <div class="title">Daventry, UK</div>
+                <div class="subtitle">Hosted by Beverly</div>
+                <div class="date">1 - 6 Sept</div>
+                <div class="price">£798 total</div>
+            </div>
+            <div class="rating">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                    focusable="false" style="display: block; height: 12px; width: 12px; fill: currentcolor;">
+                    <path fill-rule="evenodd"
+                        d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                    </path>
+                </svg>
+                <span class="number">4.91</span>
+            </div>
+        </div>
+
+        <div class="photo-item">
+            <span class="badge">Guest favourite</span>
+            <img src="https://a0.muscache.com/im/pictures/3b75e6d7-1186-4a71-bd68-94cf9a12f3dc.jpg?im_w=320">
+            <div class="description">
+                <div class="title">Odstone, UK</div>
+                <div class="subtitle">Hosted by James</div>
+                <div class="date">31 Aug - 5 Sept</div>
+                <div class="price">£829 total</div>
+            </div>
+            <div class="rating">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" role="presentation"
+                    focusable="false" style="display: block; height: 12px; width: 12px; fill: currentcolor;">
+                    <path fill-rule="evenodd"
+                        d="m15.1 1.58-4.13 8.88-9.86 1.27a1 1 0 0 0-.54 1.74l7.3 6.57-1.97 9.85a1 1 0 0 0 1.48 1.06l8.62-5 8.63 5a1 1 0 0 0 1.48-1.06l-1.97-9.85 7.3-6.57a1 1 0 0 0-.55-1.73l-9.86-1.28-4.12-8.88a1 1 0 0 0-1.82 0z">
+                    </path>
+                </svg>
+                <span class="number">4.96</span>
+            </div>
+        </div>
+
+    </div>
 </body>
 
 </html>
